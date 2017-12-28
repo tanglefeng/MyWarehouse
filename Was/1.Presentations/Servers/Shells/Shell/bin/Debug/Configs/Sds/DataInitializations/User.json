@@ -1,0 +1,11 @@
+﻿[
+  {
+    "Id": "Kengic",
+    "Name": "Kengic",
+    "Roles": [
+      { "Id": "Admin" }
+    ],
+    "PersonnelId": "Kengic",
+    "PhotoLink": "\\Resources\\KengicUser.jpg"
+  }
+]

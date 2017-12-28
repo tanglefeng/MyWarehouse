@@ -1,0 +1,12 @@
+﻿[
+  {
+    "Id": "PackageSequence",
+    "Code": "PackageSequence",
+    "Name": "Package Sequence",
+    "Value": "2",
+    "Prefix": "022000",
+    "MaxValue": "999999",
+    "MinValue": "1",
+    "IncreaseRate": "1"
+  }
+]

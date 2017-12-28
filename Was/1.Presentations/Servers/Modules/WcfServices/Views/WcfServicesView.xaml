@@ -1,0 +1,52 @@
+﻿<TabItem x:Class="Kengic.Was.Presentation.Server.Module.WcfServices.Views.WcfServicesView"
+         xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+         xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+         xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+         xmlns:telerik="http://schemas.telerik.com/2008/xaml/presentation"
+         xmlns:prism="http://prismlibrary.com/"
+         prism:ViewModelLocator.AutoWireViewModel="True"
+         mc:Ignorable="d"
+         Width="100"
+         Height="25"
+         Header="Services">
+    <TabItem.Resources>
+        <ItemsPanelTemplate x:Key="RadListBoxItemsPanel">
+            <StackPanel HorizontalAlignment="Left"
+                        VerticalAlignment="Stretch"
+                        Orientation="Horizontal" />
+        </ItemsPanelTemplate>
+        <Style TargetType="telerik:RadButton" BasedOn="{StaticResource {x:Type telerik:RadButton}}">
+            <Setter Property="Margin" Value="3" />
+        </Style>
+    </TabItem.Resources>
+    <Grid>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto" />
+            <RowDefinition />
+        </Grid.RowDefinitions>
+        <ItemsControl Grid.Row="0"
+                      ItemsPanel="{StaticResource RadListBoxItemsPanel}"
+                      Margin="3">
+            <telerik:RadButton Content="Start"
+                               Command="{Binding Path=StartCommand}"
+                               CommandParameter="{Binding Path=SelectedItems, ElementName=ServersGridView}" />
+            <telerik:RadButton Content="Stop"
+                               Command="{Binding Path=StopCommand}"
+                               CommandParameter="{Binding Path=SelectedItems, ElementName=ServersGridView}" />
+            <telerik:RadButton Content="Restart"
+                               Command="{Binding Path=RestartCommand}"
+                               CommandParameter="{Binding Path=SelectedItems, ElementName=ServersGridView}" />
+        </ItemsControl>
+        <telerik:RadGridView Grid.Row="1"
+                             SelectionMode="Extended"
+                             Name="ServersGridView"
+                             HorizontalAlignment="Stretch"
+                             VerticalAlignment="Stretch"
+                             ItemsSource="{Binding WcfServices}">
+            <telerik:RadGridView.Columns>
+                <telerik:GridViewSelectColumn />
+            </telerik:RadGridView.Columns>
+        </telerik:RadGridView>
+    </Grid>
+</TabItem>

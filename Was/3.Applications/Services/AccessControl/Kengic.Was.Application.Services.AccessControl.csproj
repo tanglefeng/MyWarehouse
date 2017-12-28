@@ -1,0 +1,125 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{0E5BE8B6-D390-4EFF-8239-393F89726900}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kengic.Was.Application.Services.AccessControl</RootNamespace>
+    <AssemblyName>Kengic.Was.Application.Services.AccessControl</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.9.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Companys\ICompanyApplicationServices.cs" />
+    <Compile Include="Companys\CompanyApplicationServices.cs" />
+    <Compile Include="Departments\IDepartmentApplicationServices.cs" />
+    <Compile Include="Departments\DepartmentApplicationServices.cs" />
+    <Compile Include="Passwords\PasswordApplicationServices.cs" />
+    <Compile Include="Passwords\IPasswordApplicationServices.cs" />
+    <Compile Include="Personnels\PersonnelApplicationServices.cs" />
+    <Compile Include="Privileges\PrivilegeApplicationServices.cs" />
+    <Compile Include="Personnels\IPersonnelApplicationServices.cs" />
+    <Compile Include="Privileges\IPrivilegeApplicationServices.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Roles\IRoleApplicationServices.cs" />
+    <Compile Include="Roles\RoleApplicationServices.cs" />
+    <Compile Include="Terminals\TerminalApplicationServices.cs" />
+    <Compile Include="Terminals\ITerminalApplicationServices.cs" />
+    <Compile Include="Users\IUserApplicationServices.cs" />
+    <Compile Include="Users\UserApplicationServices.cs" />
+    <Compile Include="Workgroups\IWorkgroupApplicationServices.cs" />
+    <Compile Include="Workgroups\WorkgroupApplicationServices.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\AccessControl\Kengic.Was.Domain.Entity.AccessControl.csproj">
+      <Project>{1616E368-C278-455A-8D1A-E5EB3D98A48F}</Project>
+      <Name>Kengic.Was.Domain.Entity.AccessControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\Common\Kengic.Was.Domain.Entity.Common.csproj">
+      <Project>{2D4E3E44-BC2E-478E-99C3-D8166E4BE049}</Project>
+      <Name>Kengic.Was.Domain.Entity.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\Logging\Kengic.Was.CrossCutting.Logging.csproj">
+      <Project>{364CDB0B-C00F-47B6-94BD-8CC3243AAEA6}</Project>
+      <Name>Kengic.Was.CrossCutting.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\MessageCodes\Kengic.Was.CrossCutting.MessageCodes.csproj">
+      <Project>{91837530-9EA2-44DE-B45C-673116331278}</Project>
+      <Name>Kengic.Was.CrossCutting.MessageCodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Commons\Common\Kengic.Was.Application.WasModel.Common.csproj">
+      <Project>{B49C2349-E626-4413-A27F-B566521B4DCE}</Project>
+      <Name>Kengic.Was.Application.WasModel.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Dtos\Dto\Kengic.Was.Application.WasModel.Dto.csproj">
+      <Project>{67842E61-F0C9-40A3-8899-F5C0E5BEEBC4}</Project>
+      <Name>Kengic.Was.Application.WasModel.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Kengic.Was.Application.Services.Common.csproj">
+      <Project>{13979A3E-5436-479B-AD22-C067398A4BD9}</Project>
+      <Name>Kengic.Was.Application.Services.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To Update your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

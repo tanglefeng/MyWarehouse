@@ -1,0 +1,115 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CEAACDDB-D03D-4C33-969D-B8F21271CE3A}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kengic.Was.Wcf.Package</RootNamespace>
+    <AssemblyName>Kengic.Was.Wcf.Package</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF">
+      <HintPath>..\..\..\..\packages\EnterpriseLibrary.ExceptionHandling.WCF.6.0.1304.0\lib\NET45\Microsoft.Practices.EnterpriseLibrary.ExceptionHandling.WCF.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\..\packages\Newtonsoft.Json.9.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.ServiceModel" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="PackageService.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\..\3.Applications\Dtos\Dto\Kengic.Was.Application.WasModel.Dto.csproj">
+      <Project>{67842E61-F0C9-40A3-8899-F5C0E5BEEBC4}</Project>
+      <Name>Kengic.Was.Application.WasModel.Dto</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\3.Applications\Services\Common\Kengic.Was.Application.Services.Common.csproj">
+      <Project>{13979A3E-5436-479B-AD22-C067398A4BD9}</Project>
+      <Name>Kengic.Was.Application.Services.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\3.Applications\Services\SystemTracing\Kengic.Was.Application.Services.SystemTracing.csproj">
+      <Project>{F07E4DEC-D9C1-4ABB-B5B9-ADF9028FDA93}</Project>
+      <Name>Kengic.Was.Application.Services.SystemTracing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\4.Domains\Contracts\BarcodePrinter\Kengic.Was.Domain.Entity.Package.csproj">
+      <Project>{11ce55f9-ba7d-47a7-9502-8a35ebae957f}</Project>
+      <Name>Kengic.Was.Domain.Entity.Package</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\4.Domains\Contracts\Common\Kengic.Was.Domain.Entity.Common.csproj">
+      <Project>{2D4E3E44-BC2E-478E-99C3-D8166E4BE049}</Project>
+      <Name>Kengic.Was.Domain.Entity.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\4.Domains\Contracts\SystemTracing\Kengic.Was.Domain.Entity.SystemTracing.csproj">
+      <Project>{9033E9C7-64AA-4665-AB95-55D98FC9006E}</Project>
+      <Name>Kengic.Was.Domain.Entity.SystemTracing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\4.Domains\Contracts\WorkTask\Kengic.Was.Domain.Entity.WorkTask.csproj">
+      <Project>{0C62027F-3E1D-4389-8621-D8584F509B40}</Project>
+      <Name>Kengic.Was.Domain.Entity.WorkTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\5.Infrastructures\CrossCuttings\Common\Kengic.Was.CrossCutting.Common.csproj">
+      <Project>{FD31F179-3225-4580-9BAF-650B2CBDB975}</Project>
+      <Name>Kengic.Was.CrossCutting.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\..\5.Infrastructures\CrossCuttings\MessageCodes\Kengic.Was.CrossCutting.MessageCodes.csproj">
+      <Project>{91837530-9EA2-44DE-B45C-673116331278}</Project>
+      <Name>Kengic.Was.CrossCutting.MessageCodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\Commons\Common\Kengic.Was.DistributedServices.Common.csproj">
+      <Project>{E6522A96-F613-4040-9470-F0505C071A05}</Project>
+      <Name>Kengic.Was.DistributedServices.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\IBarcodePrinter\Kengic.Was.Wcf.IPackage.csproj">
+      <Project>{F241FE31-BFCD-4FF4-9A86-BA3B825F8B48}</Project>
+      <Name>Kengic.Was.Wcf.IPackage</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

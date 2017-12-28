@@ -1,0 +1,350 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F99CDE8E-9353-4181-A948-61C48561EA97}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kengic.Was.CrossCutting.ConfigurationSection</RootNamespace>
+    <AssemblyName>Kengic.Was.CrossCutting.ConfigurationSection</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.9.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="ActivityContracts\ActivityContractSection.csd.cs">
+      <DependentUpon>ActivityContractSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="FileConfigs\FileConfigSection.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>FileConfigSection.csd</DependentUpon>
+    </Compile>
+    <Compile Include="Connectors\ConnectorSection.csd.cs">
+      <DependentUpon>ConnectorSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Connectors\OpcSection.csd.cs">
+      <DependentUpon>OpcSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Connectors\ScsSection.csd.cs">
+      <DependentUpon>ScsSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Connectors\TimSection.csd.cs">
+      <DependentUpon>TimSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Conventions\ConventionSection.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>ConventionSection.csd</DependentUpon>
+    </Compile>
+    <Compile Include="Logs\LogSection.csd.cs">
+      <DependentUpon>LogSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Messages\MessageSection.csd.cs">
+      <DependentUpon>MessageSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Operators\OperatorPropertySection.csd.cs">
+      <DependentUpon>OperatorPropertySection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Operators\OperatorSection.csd.cs">
+      <DependentUpon>OperatorSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="StartupType.cs" />
+    <Compile Include="TypeConfigurations\TypeConfigurationSection.csd.cs">
+      <DependentUpon>TypeConfigurationSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="TypeFormatters\TypeFormatterSection.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>TypeFormatterSection.csd</DependentUpon>
+    </Compile>
+    <Compile Include="WasResources\WasResourceSection.csd.cs">
+      <DependentUpon>WasResourceSection.csd</DependentUpon>
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <Compile Include="WcfServices\WcfServiceSection.csd.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>WcfServiceSection.csd</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="ActivityContracts\ActivityContractSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>ActivityContractSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="ActivityContracts\ActivityContractSection.csd.config">
+      <DependentUpon>ActivityContractSection.csd</DependentUpon>
+    </None>
+    <None Include="ActivityContracts\ActivityContractSection.csd.diagram">
+      <DependentUpon>ActivityContractSection.csd</DependentUpon>
+    </None>
+    <None Include="ActivityContracts\ActivityContractSection.csd.xsd">
+      <DependentUpon>ActivityContractSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="FileConfigs\FileConfigSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>FileConfigSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="FileConfigs\FileConfigSection.csd.config">
+      <DependentUpon>FileConfigSection.csd</DependentUpon>
+    </None>
+    <None Include="FileConfigs\FileConfigSection.csd.diagram">
+      <DependentUpon>FileConfigSection.csd</DependentUpon>
+    </None>
+    <None Include="FileConfigs\FileConfigSection.csd.xsd">
+      <DependentUpon>FileConfigSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connectors\ConnectorSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>ConnectorSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Connectors\ConnectorSection.csd.config">
+      <DependentUpon>ConnectorSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\ConnectorSection.csd.diagram">
+      <DependentUpon>ConnectorSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\ConnectorSection.csd.xsd">
+      <DependentUpon>ConnectorSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connectors\OpcSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>OpcSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Connectors\OpcSection.csd.config">
+      <DependentUpon>OpcSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\OpcSection.csd.diagram">
+      <DependentUpon>OpcSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\OpcSection.csd.xsd">
+      <DependentUpon>OpcSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connectors\ScsSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>ScsSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Connectors\ScsSection.csd.config">
+      <DependentUpon>ScsSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\ScsSection.csd.diagram">
+      <DependentUpon>ScsSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\ScsSection.csd.xsd">
+      <DependentUpon>ScsSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Connectors\TimSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>TimSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Connectors\TimSection.csd.config">
+      <DependentUpon>TimSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\TimSection.csd.diagram">
+      <DependentUpon>TimSection.csd</DependentUpon>
+    </None>
+    <None Include="Connectors\TimSection.csd.xsd">
+      <DependentUpon>TimSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Conventions\ConventionSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>ConventionSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Conventions\ConventionSection.csd.config">
+      <DependentUpon>ConventionSection.csd</DependentUpon>
+    </None>
+    <None Include="Conventions\ConventionSection.csd.diagram">
+      <DependentUpon>ConventionSection.csd</DependentUpon>
+    </None>
+    <None Include="Conventions\ConventionSection.csd.xsd">
+      <DependentUpon>ConventionSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Logs\LogSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>LogSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Logs\LogSection.csd.config">
+      <DependentUpon>LogSection.csd</DependentUpon>
+    </None>
+    <None Include="Logs\LogSection.csd.diagram">
+      <DependentUpon>LogSection.csd</DependentUpon>
+    </None>
+    <None Include="Logs\LogSection.csd.xsd">
+      <DependentUpon>LogSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Messages\MessageSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>MessageSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Messages\MessageSection.csd.config">
+      <DependentUpon>MessageSection.csd</DependentUpon>
+    </None>
+    <None Include="Messages\MessageSection.csd.diagram">
+      <DependentUpon>MessageSection.csd</DependentUpon>
+    </None>
+    <None Include="Messages\MessageSection.csd.xsd">
+      <DependentUpon>MessageSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operators\OperatorPropertySection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>OperatorPropertySection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Operators\OperatorPropertySection.csd.config">
+      <DependentUpon>OperatorPropertySection.csd</DependentUpon>
+    </None>
+    <None Include="Operators\OperatorPropertySection.csd.diagram">
+      <DependentUpon>OperatorPropertySection.csd</DependentUpon>
+    </None>
+    <None Include="Operators\OperatorPropertySection.csd.xsd">
+      <DependentUpon>OperatorPropertySection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Operators\OperatorSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>OperatorSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="Operators\OperatorSection.csd.config">
+      <DependentUpon>OperatorSection.csd</DependentUpon>
+    </None>
+    <None Include="Operators\OperatorSection.csd.diagram">
+      <DependentUpon>OperatorSection.csd</DependentUpon>
+    </None>
+    <None Include="Operators\OperatorSection.csd.xsd">
+      <DependentUpon>OperatorSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="packages.config" />
+    <None Include="TypeConfigurations\TypeConfigurationSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>TypeConfigurationSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="TypeConfigurations\TypeConfigurationSection.csd.config">
+      <DependentUpon>TypeConfigurationSection.csd</DependentUpon>
+    </None>
+    <None Include="TypeConfigurations\TypeConfigurationSection.csd.diagram">
+      <DependentUpon>TypeConfigurationSection.csd</DependentUpon>
+    </None>
+    <None Include="TypeConfigurations\TypeConfigurationSection.csd.xsd">
+      <DependentUpon>TypeConfigurationSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="TypeFormatters\TypeFormatterSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>TypeFormatterSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="TypeFormatters\TypeFormatterSection.csd.config">
+      <DependentUpon>TypeFormatterSection.csd</DependentUpon>
+    </None>
+    <None Include="TypeFormatters\TypeFormatterSection.csd.diagram">
+      <DependentUpon>TypeFormatterSection.csd</DependentUpon>
+    </None>
+    <None Include="TypeFormatters\TypeFormatterSection.csd.xsd">
+      <DependentUpon>TypeFormatterSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WasResources\WasResourceSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>WasResourceSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="WasResources\WasResourceSection.csd.config">
+      <DependentUpon>WasResourceSection.csd</DependentUpon>
+    </None>
+    <None Include="WasResources\WasResourceSection.csd.diagram">
+      <DependentUpon>WasResourceSection.csd</DependentUpon>
+    </None>
+    <None Include="WasResources\WasResourceSection.csd.xsd">
+      <DependentUpon>WasResourceSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="WcfServices\WcfServiceSection.csd">
+      <Generator>CsdFileGenerator</Generator>
+      <LastGenOutput>WcfServiceSection.csd.cs</LastGenOutput>
+    </None>
+    <None Include="WcfServices\WcfServiceSection.csd.config">
+      <DependentUpon>WcfServiceSection.csd</DependentUpon>
+    </None>
+    <None Include="WcfServices\WcfServiceSection.csd.diagram">
+      <DependentUpon>WcfServiceSection.csd</DependentUpon>
+    </None>
+    <None Include="WcfServices\WcfServiceSection.csd.xsd">
+      <DependentUpon>WcfServiceSection.csd</DependentUpon>
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To Update your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

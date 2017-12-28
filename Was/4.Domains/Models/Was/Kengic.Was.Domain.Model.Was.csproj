@@ -1,0 +1,149 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{2D1C2B25-B610-4FEC-8794-DF53175BD8C8}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kengic.Was.Domain.Model.Was</RootNamespace>
+    <AssemblyName>Kengic.Was.Domain.Model.Was</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="EntityFramework, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="EntityFramework.SqlServer, Version=6.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EntityFramework.6.1.3\lib\net45\EntityFramework.SqlServer.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Practices.EnterpriseLibrary.SemanticLogging, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\EnterpriseLibrary.SemanticLogging.2.0.1406.1\lib\net45\Microsoft.Practices.EnterpriseLibrary.SemanticLogging.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.9.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Migrations\Empty.cs" />
+    <Compile Include="Migrations\Empty.Designer.cs">
+      <DependentUpon>Empty.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Migrations\WasModelConfiguration.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="WasModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\Common\Kengic.Was.CrossCutting.Common.csproj">
+      <Project>{FD31F179-3225-4580-9BAF-650B2CBDB975}</Project>
+      <Name>Kengic.Was.CrossCutting.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\ConfigurationSection\Kengic.Was.CrossCutting.ConfigurationSection.csproj">
+      <Project>{F99CDE8E-9353-4181-A948-61C48561EA97}</Project>
+      <Name>Kengic.Was.CrossCutting.ConfigurationSection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\Configuration\Kengic.Was.CrossCutting.Configuration.csproj">
+      <Project>{E9C64FAC-D8AD-43BF-89A8-5C7A1515298B}</Project>
+      <Name>Kengic.Was.CrossCutting.Configuration</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\AccessControl\Kengic.Was.Domain.Entity.AccessControl.csproj">
+      <Project>{1616E368-C278-455A-8D1A-E5EB3D98A48F}</Project>
+      <Name>Kengic.Was.Domain.Entity.AccessControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\AlarmEvent\Kengic.Was.Domain.Entity.AlarmEvent.csproj">
+      <Project>{DE17E06F-3423-4C80-9D6F-B999A61D705F}</Project>
+      <Name>Kengic.Was.Domain.Entity.AlarmEvent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\Common\Kengic.Was.Domain.Entity.Common.csproj">
+      <Project>{2d4e3e44-bc2e-478e-99c3-d8166e4be049}</Project>
+      <Name>Kengic.Was.Domain.Entity.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\DisplayMessage\Kengic.Was.Domain.Entity.DisplayMessage.csproj">
+      <Project>{9CF4AA03-0985-4069-90A5-A48E9E11CF03}</Project>
+      <Name>Kengic.Was.Domain.Entity.DisplayMessage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\Executor\Kengic.Was.Domain.Entity.Executor.csproj">
+      <Project>{1D85C548-CD9A-4233-A065-7922257D1A07}</Project>
+      <Name>Kengic.Was.Domain.Entity.Executor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\Sorter\Kengic.Was.Domain.Entity.Sorter.csproj">
+      <Project>{B949E014-2A98-46B5-B336-54AAFE316D9C}</Project>
+      <Name>Kengic.Was.Domain.Entity.Sorter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\SystemSequence\Kengic.Was.Domain.Entity.SystemSequence.csproj">
+      <Project>{386DB05A-9C65-436C-840F-A71352074E76}</Project>
+      <Name>Kengic.Was.Domain.Entity.SystemSequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\SystemTracing\Kengic.Was.Domain.Entity.SystemTracing.csproj">
+      <Project>{9033E9C7-64AA-4665-AB95-55D98FC9006E}</Project>
+      <Name>Kengic.Was.Domain.Entity.SystemTracing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\WorkTask\Kengic.Was.Domain.Entity.WorkTask.csproj">
+      <Project>{0C62027F-3E1D-4389-8621-D8584F509B40}</Project>
+      <Name>Kengic.Was.Domain.Entity.WorkTask</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Contracts\SystemParameter\Kengic.Was.Domain.Entity.SystemParameter.csproj">
+      <Project>{135048F2-2876-48A6-A488-41EC86B16D1C}</Project>
+      <Name>Kengic.Was.Domain.Entity.SystemParameter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\Implements\Common\Kengic.Was.Domain.Common.csproj">
+      <Project>{2B4A7623-C470-4137-8A28-E69F58000A37}</Project>
+      <Name>Kengic.Was.Domain.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Migrations\Empty.resx">
+      <DependentUpon>Empty.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To Update your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

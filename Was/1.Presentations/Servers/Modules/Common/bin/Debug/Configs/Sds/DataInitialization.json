@@ -1,0 +1,93 @@
+﻿[
+  {
+    "id": "Company",
+    "name": "Company",
+    "code": "Company",
+    "filePath": "DataInitializations\\Company.json",
+    "type": "Company"
+  },
+  {
+    "id": "Department",
+    "name": "Department",
+    "code": "Department",
+    "filePath": "DataInitializations\\Department.json",
+    "type": "Department"
+  },
+  {
+    "id": "FunctionPrivilege",
+    "name": "FunctionPrivilege",
+    "code": "FunctionPrivilege",
+    "filePath": "DataInitializations\\FunctionPrivilege.json",
+    "type": "FunctionPrivilege"
+  },
+  {
+    "id": "RoleAdmin",
+    "name": "RoleAdmin",
+    "code": "RoleAdmin",
+    "filePath": "DataInitializations\\RoleAdmin.json",
+    "type": "Role"
+  },
+  {
+    "id": "RoleOperator",
+    "name": "RoleOperator",
+    "code": "RoleOperator",
+    "filePath": "DataInitializations\\RoleOperator.json",
+    "type": "Role"
+  },
+  {
+    "id": "Personnel",
+    "name": "Personnel",
+    "code": "Personnel",
+    "filePath": "DataInitializations\\Personnel.json",
+    "type": "Personnel"
+  },
+  {
+    "id": "User",
+    "name": "User",
+    "code": "User",
+    "filePath": "DataInitializations\\User.json",
+    "type": "User"
+  },
+  {
+    "id": "Password",
+    "name": "Password",
+    "code": "Password",
+    "filePath": "DataInitializations\\Password.json",
+    "type": "Password"
+  },
+  {
+    "id": "AlarmEventType",
+    "name": "AlarmEventType",
+    "code": "AlarmEventType",
+    "filePath": "DataInitializations\\AlarmEventType.json",
+    "type": "AlarmEventType"
+  },
+  {
+    "id": "SystemParameter",
+    "name": "SystemParameter",
+    "code": "SystemParameter",
+    "filePath": "DataInitializations\\SystemParameter.json",
+    "type": "SystemParameter"
+  },
+  {
+    "id": "SystemParameterTemplate",
+    "name": "SystemParameterTemplate",
+    "code": "SystemParameterTemplate",
+    "filePath": "DataInitializations\\SystemParameterTemplate.json",
+    "type": "SystemParameterTemplate"
+  },
+  {
+    "id": "SystemSequence",
+    "name": "SystemSequence",
+    "code": "SystemSequence",
+    "filePath": "DataInitializations\\SystemSequence.json",
+    "type": "SystemSequence"
+  },
+  {
+    "id": "WasExecutor",
+    "name": "WasExecutor",
+    "code": "WasExecutor",
+    "filePath": "DataInitializations\\WasExecutor.json",
+    "type": "WasExecutor"
+  }
+]

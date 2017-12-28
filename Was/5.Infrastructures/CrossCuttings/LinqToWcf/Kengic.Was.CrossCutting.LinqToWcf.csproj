@@ -1,0 +1,124 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{F328DA4C-CC2E-4AD9-BDB3-A9935CEE16E1}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kengic.Was.CrossCutting.LinqToWcf</RootNamespace>
+    <AssemblyName>Kengic.Was.CrossCutting.LinqToWcf</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.9.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Communications\ClientQueryHandler.cs" />
+    <Compile Include="QueryProvider\ClientQueryProvider.cs" />
+    <Compile Include="Communications\InterLinqKnowTypes.cs" />
+    <Compile Include="Communications\ServerQueryHandler.cs" />
+    <Compile Include="Communications\DataContractResolverExtensions.cs" />
+    <Compile Include="Expressions\ExpressionConversionHelper.cs" />
+    <Compile Include="Expressions\Helpers\ExpressionConverter.cs" />
+    <Compile Include="Expressions\Helpers\ExpressionVisitor.cs" />
+    <Compile Include="Expressions\Helpers\RewriteExpressionVisitor.cs" />
+    <Compile Include="Expressions\Helpers\SerializableExpressionConverter.cs" />
+    <Compile Include="Expressions\Helpers\SerializableExpressionVisitor.cs" />
+    <Compile Include="Expressions\SerializableBinaryExpression.cs" />
+    <Compile Include="Expressions\SerializableConditionalExpression.cs" />
+    <Compile Include="Expressions\SerializableConstantExpression.cs" />
+    <Compile Include="Expressions\SerializableExpression.cs" />
+    <Compile Include="Expressions\SerializableExpressionTyped.cs" />
+    <Compile Include="Expressions\SerializableInvocationExpression.cs" />
+    <Compile Include="Expressions\SerializableLambdaExpression.cs" />
+    <Compile Include="Expressions\SerializableListInitExpression.cs" />
+    <Compile Include="Expressions\SerializableMemberExpression.cs" />
+    <Compile Include="Expressions\SerializableMemberInitExpression.cs" />
+    <Compile Include="Expressions\SerializableMethodCallExpression.cs" />
+    <Compile Include="Expressions\SerializableNewArrayExpression.cs" />
+    <Compile Include="Expressions\SerializableNewExpression.cs" />
+    <Compile Include="Expressions\SerializableParameterExpression.cs" />
+    <Compile Include="Expressions\SerializableTypeBinaryExpression.cs" />
+    <Compile Include="Expressions\SerializableTypes\SerializableElementInit.cs" />
+    <Compile Include="Expressions\SerializableTypes\SerializableMemberAssignment.cs" />
+    <Compile Include="Expressions\SerializableTypes\SerializableMemberBinding.cs" />
+    <Compile Include="Expressions\SerializableTypes\SerializableMemberListBinding.cs" />
+    <Compile Include="Expressions\SerializableTypes\SerializableMemberMemberBinding.cs" />
+    <Compile Include="Expressions\SerializableUnaryExpression.cs" />
+    <Compile Include="QueryProvider\InterLinqQueryBase.cs" />
+    <Compile Include="Communications\InterLinqQueryHandler.cs" />
+    <Compile Include="QueryProvider\InterLinqQuery.cs" />
+    <Compile Include="QueryProvider\InterLinqQueryProvider.cs" />
+    <Compile Include="Communications\IQueryHandler.cs" />
+    <Compile Include="Communications\IQueryRemoteHandler.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Types\Anonymous\AnonymousMetaProperty.cs" />
+    <Compile Include="Types\Anonymous\AnonymousMetaType.cs" />
+    <Compile Include="Types\Anonymous\AnonymousObject.cs" />
+    <Compile Include="Types\Anonymous\AnonymousProperty.cs" />
+    <Compile Include="Types\Anonymous\AnonymousTypeHelper.cs" />
+    <Compile Include="Types\Anonymous\DynamicAssemblyHolder.cs" />
+    <Compile Include="Types\Anonymous\InterLinqGrouping.cs" />
+    <Compile Include="Types\InterLinqConstructorInfo.cs" />
+    <Compile Include="Types\InterLinqFieldInfo.cs" />
+    <Compile Include="Types\InterLinqMemberInfo.cs" />
+    <Compile Include="Types\InterLinqMethodBase.cs" />
+    <Compile Include="Types\InterLinqMethodInfo.cs" />
+    <Compile Include="Types\InterLinqPropertyInfo.cs" />
+    <Compile Include="Types\InterLinqType.cs" />
+    <Compile Include="Types\InterLinqTypeSystem.cs" />
+    <Compile Include="Types\TypeConverter.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

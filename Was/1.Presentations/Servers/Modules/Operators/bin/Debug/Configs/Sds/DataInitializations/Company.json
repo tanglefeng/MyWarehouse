@@ -1,0 +1,23 @@
+﻿[
+  {
+    "Id": "Mesnac",
+    "Name": "软控股份",
+    "Description": "青岛软控股份有限公司",
+    "AddressCode": "中国青岛市郑州路43号",
+    "AddressDetail": "中国青岛市郑州路43号",
+    "Fax": "+86-0532-84012651",
+    "Telephone": "+86-0532-68862626 ",
+    "PhotoLink": "\\Resources\\Images\\Logo\\MesnacLogo.jpg"
+  },
+  {
+    "Id": "Kengic",
+    "Name": "科捷物流",
+    "ParentId": "Mesnac",
+    "Description": "青岛科捷物流自动化设备有限公司",
+    "AddressCode": "上海市闵行区瓶安路1358号久创科技园3号楼3楼",
+    "AddressDetail": "青岛市高新区祥源路科捷机器人产业园",
+    "Fax": "+86-21-61157115",
+    "Telephone": "+86-21-60759888",
+    "PhotoLink": "\\Resources\\Images\\Logo\\KengicLogo.png"
+  }
+]

@@ -1,0 +1,10 @@
+﻿[
+  {
+    "Id": "DeviceAlarm",
+    "Name": "DeviceAlarm"
+  },
+  {
+    "Id": "SystemAlarm",
+    "Name": "SystemAlarm"
+  }
+]

@@ -1,0 +1,22 @@
+﻿[
+  {
+    "Id": "Global",
+    "Code": "Global",
+    "Name": "Global"
+  },
+  {
+    "Id": "Sds",
+    "Code": "Sds",
+    "Name": "Sds"
+  },
+  {
+    "Id": "Wcs",
+    "Code": "Wcs",
+    "Name": "Wcs"
+  },
+  {
+    "Id": "Wms",
+    "Code": "Wms",
+    "Name": "Wms"
+  }
+]

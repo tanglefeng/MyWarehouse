@@ -1,0 +1,39 @@
+﻿[
+  {
+    "Id": "Operator",
+    "Name": "操作者",
+    "FunctionPrivileges": [
+      { "Id": "AlarmRecord.Query" },
+      { "Id": "AlarmRecord.Remove" },
+      { "Id": "AlarmType.Query" },
+      { "Id": "Executor.Query" },
+      { "Id": "InductRepositorys.Query" },
+      { "Id": "LogicalDestinationRepositorys.Query" },
+      { "Id": "LogicalSorterRepository.Query" },
+      { "Id": "PhysicalSorterRepository.Query" },
+      { "Id": "RoutingRepositorys.Query" },
+      { "Id": "ScannerRepositorys.Query" },
+      { "Id": "ShuteRepositorys.Query" },
+      { "Id": "ShuteTypeRepository.Query" },
+      { "Id": "SorterExecuteWorkTask.Add" },
+      { "Id": "SorterExecuteWorkTask.Cancel" },
+      { "Id": "SorterExecuteWorkTask.Query" },
+      { "Id": "SorterExecuteWorkTask.Terminate" },
+      { "Id": "SorterInformationForHour.Query" },
+      { "Id": "SorterMessageWorkTask.Add" },
+      { "Id": "SorterMessageWorkTask.Cancel" },
+      { "Id": "SorterMessageWorkTask.Query" },
+      { "Id": "SorterMessageWorkTask.Renew" },
+      { "Id": "SorterMessageWorkTask.Terminate" },
+      { "Id": "SorterParameterRepositorys.Query" },
+      { "Id": "SorterPlanRepositorys.Query" },
+      { "Id": "SorterSubWorkTask.Cancel" },
+      { "Id": "SorterSubWorkTask.Query" },
+      { "Id": "SorterSubWorkTask.Terminate" },
+      { "Id": "SorterSubWorkTask.Export" },
+   
+      { "Id": "SorterSubWorkDupleTask.Query" },
+      { "Id": "SorterSubWorkDupleTask.Export" }
+    ]
+  }
+]

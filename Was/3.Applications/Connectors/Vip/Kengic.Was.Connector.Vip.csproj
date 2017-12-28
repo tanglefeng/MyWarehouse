@@ -1,0 +1,95 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{036E5B46-0DD3-4496-8D7B-EA8E3BEB7991}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kengic.Was.Connector.Vip</RootNamespace>
+    <AssemblyName>Kengic.Was.Connector.Vip</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.9.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="VipClient.cs" />
+    <Compile Include="VipMessage.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\ConfigurationSection\Kengic.Was.CrossCutting.ConfigurationSection.csproj">
+      <Project>{f99cde8e-9353-4181-a948-61c48561ea97}</Project>
+      <Name>Kengic.Was.CrossCutting.ConfigurationSection</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\Logging\Kengic.Was.CrossCutting.Logging.csproj">
+      <Project>{364cdb0b-c00f-47b6-94bd-8cc3243aaea6}</Project>
+      <Name>Kengic.Was.CrossCutting.Logging</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\MessageCodes\Kengic.Was.CrossCutting.MessageCodes.csproj">
+      <Project>{91837530-9ea2-44de-b45c-673116331278}</Project>
+      <Name>Kengic.Was.CrossCutting.MessageCodes</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\5.Infrastructures\CrossCuttings\Sockets\Kengic.Was.CrossCutting.Sockets.csproj">
+      <Project>{b131dd64-f062-4769-a03a-90079fc4bde7}</Project>
+      <Name>Kengic.Was.CrossCutting.Sockets</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\Common\Kengic.Was.Connector.Common.csproj">
+      <Project>{e70048e0-821a-41ec-ab75-17620d1f2feb}</Project>
+      <Name>Kengic.Was.Connector.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

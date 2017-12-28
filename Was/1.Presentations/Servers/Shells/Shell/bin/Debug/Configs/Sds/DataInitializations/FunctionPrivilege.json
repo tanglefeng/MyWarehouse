@@ -1,0 +1,483 @@
+﻿[
+  {
+    "Id": "Company.Add",
+    "FunObjCatalog": "Company"
+  },
+  {
+    "Id": "Company.Remove",
+    "FunObjCatalog": "Company"
+  },
+  {
+    "Id": "Company.Update",
+    "FunObjCatalog": "Company"
+  },
+  {
+    "Id": "Company.Query",
+    "FunObjCatalog": "Company"
+  },
+  {
+    "Id": "Department.Add",
+    "FunObjCatalog": "Department"
+  },
+  {
+    "Id": "Department.Remove",
+    "FunObjCatalog": "Department"
+  },
+  {
+    "Id": "Department.Update",
+    "FunObjCatalog": "Department"
+  },
+  {
+    "Id": "Department.Query",
+    "FunObjCatalog": "Department"
+  },
+  {
+    "Id": "Personnel.Add",
+    "FunObjCatalog": "Personnel"
+  },
+  {
+    "Id": "Personnel.Remove",
+    "FunObjCatalog": "Personnel"
+  },
+  {
+    "Id": "Personnel.Update",
+    "FunObjCatalog": "Personnel"
+  },
+  {
+    "Id": "Personnel.Query",
+    "FunObjCatalog": "Personnel"
+  },
+  {
+    "Id": "User.Add",
+    "FunObjCatalog": "User"
+  },
+  {
+    "Id": "User.Remove",
+    "FunObjCatalog": "User"
+  },
+  {
+    "Id": "User.Update",
+    "FunObjCatalog": "User"
+  },
+  {
+    "Id": "User.Role.Selection",
+    "FunObjCatalog": "User"
+  },
+  {
+    "Id": "User.Privilege.Selection",
+    "FunObjCatalog": "User"
+  },
+  {
+    "Id": "User.Query",
+    "FunObjCatalog": "User"
+  },
+  {
+    "Id": "Role.Add",
+    "FunObjCatalog": "Role"
+  },
+  {
+    "Id": "Role.Remove",
+    "FunObjCatalog": "Role"
+  },
+  {
+    "Id": "Role.Update",
+    "FunObjCatalog": "Role"
+  },
+  {
+    "Id": "Role.Privilege.Selection",
+    "FunObjCatalog": "Role"
+  },
+  {
+    "Id": "Role.Query",
+    "FunObjCatalog": "Role"
+  },
+  {
+    "Id": "Privilege.Add",
+    "FunObjCatalog": "Privilege"
+  },
+  {
+    "Id": "Privilege.Remove",
+    "FunObjCatalog": "Privilege"
+  },
+  {
+    "Id": "Privilege.Update",
+    "FunObjCatalog": "Privilege"
+  },
+  {
+    "Id": "Privilege.Query",
+    "FunObjCatalog": "Privilege"
+  },
+  {
+    "Id": "Password.Add",
+    "FunObjCatalog": "Password"
+  },
+  {
+    "Id": "Password.Remove",
+    "FunObjCatalog": "Password"
+  },
+  {
+    "Id": "Password.Update",
+    "FunObjCatalog": "Password"
+  },
+  {
+    "Id": "Password.Query",
+    "FunObjCatalog": "Password"
+  },
+  {
+    "Id": "Password.Reset",
+    "FunObjCatalog": "Password"
+  },
+  {
+    "Id": "AlarmRecord.Add",
+    "FunObjCatalog": "AlarmRecord"
+  },
+  {
+    "Id": "AlarmRecord.Remove",
+    "FunObjCatalog": "AlarmRecord"
+  },
+  {
+    "Id": "AlarmRecord.Update",
+    "FunObjCatalog": "AlarmRecord"
+  },
+  {
+    "Id": "AlarmRecord.Query",
+    "FunObjCatalog": "AlarmRecord"
+  },
+  {
+    "Id": "AlarmType.Add",
+    "FunObjCatalog": "AlarmType"
+  },
+  {
+    "Id": "AlarmType.Remove",
+    "FunObjCatalog": "AlarmType"
+  },
+  {
+    "Id": "AlarmType.Update",
+    "FunObjCatalog": "AlarmType"
+  },
+  {
+    "Id": "AlarmType.Query",
+    "FunObjCatalog": "AlarmType"
+  },
+  {
+    "Id": "SystemParameterTemplate.Add",
+    "FunObjCatalog": "SystemParameterTemplate"
+  },
+  {
+    "Id": "SystemParameterTemplate.Remove",
+    "FunObjCatalog": "SystemParameterTemplate"
+  },
+  {
+    "Id": "SystemParameterTemplate.Update",
+    "FunObjCatalog": "SystemParameterTemplate"
+  },
+  {
+    "Id": "SystemParameterTemplate.Query",
+    "FunObjCatalog": "SystemParameterTemplate"
+  },
+  {
+    "Id": "SystemParameter.Add",
+    "FunObjCatalog": "SystemParameter"
+  },
+  {
+    "Id": "SystemParameter.Remove",
+    "FunObjCatalog": "SystemParameter"
+  },
+  {
+    "Id": "SystemParameter.Update",
+    "FunObjCatalog": "SystemParameter"
+  },
+  {
+    "Id": "SystemParameter.Query",
+    "FunObjCatalog": "SystemParameter"
+  },
+  {
+    "Id": "SystemSequence.Add",
+    "FunObjCatalog": "SystemSequence"
+  },
+  {
+    "Id": "SystemSequence.Remove",
+    "FunObjCatalog": "SystemSequence"
+  },
+  {
+    "Id": "SystemSequence.Update",
+    "FunObjCatalog": "SystemSequence"
+  },
+  {
+    "Id": "SystemSequence.Query",
+    "FunObjCatalog": "SystemSequence"
+  },
+  {
+    "Id": "Executor.Add",
+    "FunObjCatalog": "Executor"
+  },
+  {
+    "Id": "Executor.Remove",
+    "FunObjCatalog": "Executor"
+  },
+  {
+    "Id": "Executor.Update",
+    "FunObjCatalog": "Executor"
+  },
+  {
+    "Id": "Executor.Query",
+    "FunObjCatalog": "Executor"
+  },
+
+  {
+    "Id": "InductRepositorys.Add",
+    "FunObjCatalog": "InductRepositorys"
+  },
+  {
+    "Id": "InductRepositorys.Remove",
+    "FunObjCatalog": "InductRepositorys"
+  },
+  {
+    "Id": "InductRepositorys.Update",
+    "FunObjCatalog": "InductRepositorys"
+  },
+  {
+    "Id": "InductRepositorys.Query",
+    "FunObjCatalog": "InductRepositorys"
+  },
+  {
+    "Id": "LogicalDestinationRepositorys.Add",
+    "FunObjCatalog": "LogicalDestinationRepositorys"
+  },
+  {
+    "Id": "LogicalDestinationRepositorys.Remove",
+    "FunObjCatalog": "LogicalDestinationRepositorys"
+  },
+  {
+    "Id": "LogicalDestinationRepositorys.Update",
+    "FunObjCatalog": "LogicalDestinationRepositorys"
+  },
+  {
+    "Id": "LogicalDestinationRepositorys.Query",
+    "FunObjCatalog": "LogicalDestinationRepositorys"
+  },
+  {
+    "Id": "RoutingRepositorys.Add",
+    "FunObjCatalog": "RoutingRepositorys"
+  },
+  {
+    "Id": "RoutingRepositorys.Remove",
+    "FunObjCatalog": "RoutingRepositorys"
+  },
+  {
+    "Id": "RoutingRepositorys.Update",
+    "FunObjCatalog": "RoutingRepositorys"
+  },
+  {
+    "Id": "RoutingRepositorys.Query",
+    "FunObjCatalog": "RoutingRepositorys"
+  },
+  {
+    "Id": "ScannerRepositorys.Add",
+    "FunObjCatalog": "ScannerRepositorys"
+  },
+  {
+    "Id": "ScannerRepositorys.Remove",
+    "FunObjCatalog": "ScannerRepositorys"
+  },
+  {
+    "Id": "ScannerRepositorys.Update",
+    "FunObjCatalog": "ScannerRepositorys"
+  },
+  {
+    "Id": "ScannerRepositorys.Query",
+    "FunObjCatalog": "ScannerRepositorys"
+  },
+  {
+    "Id": "ShuteRepositorys.Add",
+    "FunObjCatalog": "ShuteRepositorys"
+  },
+  {
+    "Id": "ShuteRepositorys.Remove",
+    "FunObjCatalog": "ShuteRepositorys"
+  },
+  {
+    "Id": "ShuteRepositorys.Update",
+    "FunObjCatalog": "ShuteRepositorys"
+  },
+  {
+    "Id": "ShuteRepositorys.Query",
+    "FunObjCatalog": "ShuteRepositorys"
+  },
+  {
+    "Id": "ShuteTypeRepository.Add",
+    "FunObjCatalog": "ShuteTypeRepository"
+  },
+  {
+    "Id": "ShuteTypeRepository.Remove",
+    "FunObjCatalog": "ShuteTypeRepository"
+  },
+  {
+    "Id": "ShuteTypeRepository.Update",
+    "FunObjCatalog": "ShuteTypeRepository"
+  },
+  {
+    "Id": "ShuteTypeRepository.Query",
+    "FunObjCatalog": "ShuteTypeRepository"
+  },
+  {
+    "Id": "SorterPlanRepositorys.Add",
+    "FunObjCatalog": "SorterPlanRepositorys"
+  },
+  {
+    "Id": "SorterPlanRepositorys.Remove",
+    "FunObjCatalog": "SorterPlanRepositorys"
+  },
+  {
+    "Id": "SorterPlanRepositorys.Update",
+    "FunObjCatalog": "SorterPlanRepositorys"
+  },
+  {
+    "Id": "SorterPlanRepositorys.Query",
+    "FunObjCatalog": "SorterPlanRepositorys"
+  },
+  {
+    "Id": "SorterParameterRepositorys.Add",
+    "FunObjCatalog": "SorterParameterRepositorys"
+  },
+  {
+    "Id": "SorterParameterRepositorys.Remove",
+    "FunObjCatalog": "SorterParameterRepositorys"
+  },
+  {
+    "Id": "SorterParameterRepositorys.Update",
+    "FunObjCatalog": "SorterParameterRepositorys"
+  },
+  {
+    "Id": "SorterParameterRepositorys.Query",
+    "FunObjCatalog": "SorterParameterRepositorys"
+  },
+  {
+    "Id": "LogicalSorterRepository.Add",
+    "FunObjCatalog": "LogicalSorterRepository"
+  },
+  {
+    "Id": "LogicalSorterRepository.Remove",
+    "FunObjCatalog": "LogicalSorterRepository"
+  },
+  {
+    "Id": "LogicalSorterRepository.Update",
+    "FunObjCatalog": "LogicalSorterRepository"
+  },
+  {
+    "Id": "LogicalSorterRepository.Query",
+    "FunObjCatalog": "LogicalSorterRepository"
+  },
+  {
+    "Id": "PhysicalSorterRepository.Add",
+    "FunObjCatalog": "PhysicalSorterRepository"
+  },
+  {
+    "Id": "PhysicalSorterRepository.Remove",
+    "FunObjCatalog": "PhysicalSorterRepository"
+  },
+  {
+    "Id": "PhysicalSorterRepository.Update",
+    "FunObjCatalog": "PhysicalSorterRepository"
+  },
+  {
+    "Id": "PhysicalSorterRepository.Query",
+    "FunObjCatalog": "PhysicalSorterRepository"
+  },
+  {
+    "Id": "SorterExecuteWorkTask.Add",
+    "FunObjCatalog": "SorterExecuteWorkTask"
+  },
+  {
+    "Id": "SorterExecuteWorkTask.Cancel",
+    "FunObjCatalog": "SorterExecuteWorkTask"
+  },
+  {
+    "Id": "SorterExecuteWorkTask.Terminate",
+    "FunObjCatalog": "SorterExecuteWorkTask"
+  },
+  {
+    "Id": "SorterExecuteWorkTask.Query",
+    "FunObjCatalog": "SorterExecuteWorkTask"
+  },
+  {
+    "Id": "SorterSubWorkTask.Cancel",
+    "FunObjCatalog": "SorterSubWorkTask"
+  },
+  {
+    "Id": "SorterSubWorkTask.Terminate",
+    "FunObjCatalog": "SorterSubWorkTask"
+  },
+  {
+    "Id": "SorterSubWorkTask.Query",
+    "FunObjCatalog": "SorterSubWorkTask"
+  },
+  {
+    "Id": "SorterSubWorkTask.Export",
+    "FunObjCatalog": "SorterSubWorkTask"
+  },
+  {
+    "Id": "SorterMessageWorkTask.Query",
+    "FunObjCatalog": "SorterMessageWorkTask"
+  },
+  {
+    "Id": "SorterMessageWorkTask.Add",
+    "FunObjCatalog": "SorterMessageWorkTask"
+  },
+  {
+    "Id": "SorterMessageWorkTask.Cancel",
+    "FunObjCatalog": "SorterMessageWorkTask"
+  },
+  {
+    "Id": "SorterMessageWorkTask.Terminate",
+    "FunObjCatalog": "SorterMessageWorkTask"
+  },
+  {
+    "Id": "SorterMessageWorkTask.Renew",
+    "FunObjCatalog": "SorterMessageWorkTask"
+  },
+  {
+    "Id": "DisplayMessage.Add",
+    "FunObjCatalog": "DisplayMessage"
+  },
+  {
+    "Id": "DisplayMessage.Remove",
+    "FunObjCatalog": "DisplayMessage"
+  },
+  {
+    "Id": "DisplayMessage.Update",
+    "FunObjCatalog": "DisplayMessage"
+  },
+  {
+    "Id": "DisplayMessage.Query",
+    "FunObjCatalog": "DisplayMessage"
+  },
+  {
+    "Id": "ChartTest.Query",
+    "FunObjCatalog": "ChartTest"
+  },
+  {
+    "Id": "SorterInformationForHour.Query",
+    "FunObjCatalog": "SorterInformationForHour"
+  },
+  {
+    "Id": "SystemTracing.Query",
+    "FunObjCatalog": "SystemTracing"
+  },
+  {
+    "Id": "ComplementSourceWorkTask.Query",
+    "FunObjCatalog": "ComplementSourceWorkTask"
+  },
+  {
+    "Id": "ComplementSourceWorkTask.Cancel",
+    "FunObjCatalog": "ComplementSourceWorkTask"
+  },
+  {
+    "Id": "SorterSubWorkDupleTask.Query",
+    "FunObjCatalog": "SorterSubWorkDupleTask"
+  },
+  {
+    "Id": "SorterSubWorkDupleTask.Export",
+    "FunObjCatalog": "SorterSubWorkDupleTask"
+  }
+]

@@ -1,0 +1,27 @@
+﻿[
+  {
+    "Id": "ScsServer",
+    "Name": "ScsServer",
+    "Connection": "ScsServer",
+    "ExecuteOperator": "SorterOperator"
+  },
+  {
+    "Id": "JdSocketClient",
+    "Name": "JdSocketClient",
+    "Connection": "JdSocketClient",
+    "ExecuteOperator": "JdOperator"
+  },
+  {
+    "Id": "ImaVisionSocketClient",
+    "Name": "ImaVisionSocketClient",
+    "Connection": "ImaVisionSocketClient",
+    "ExecuteOperator": "ImaVisionOperator"
+  },
+  {
+    "Id": "WebEasySocketClient",
+    "Name": "WebEasySocketClient",
+    "Connection": "WebEasySocketClient",
+    "ExecuteOperator": "WebEasyOperator"
+  }
+
+]

@@ -1,0 +1,166 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="14.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{67842E61-F0C9-40A3-8899-F5C0E5BEEBC4}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Kengic.Was.Application.WasModel.Dto</RootNamespace>
+    <AssemblyName>Kengic.Was.Application.WasModel.Dto</AssemblyName>
+    <TargetFrameworkVersion>v4.6</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <SccProjectName>SAK</SccProjectName>
+    <SccLocalPath>SAK</SccLocalPath>
+    <SccAuxPath>SAK</SccAuxPath>
+    <SccProvider>SAK</SccProvider>
+    <TargetFrameworkProfile />
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.0.0.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\AutoMapper.5.0.0-beta-1\lib\net45\AutoMapper.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Newtonsoft.Json, Version=9.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\..\..\packages\Newtonsoft.Json.9.0.1-beta1\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="AccessControls\ForeignEntity.cs" />
+    <Compile Include="AccessControls\Passwords\ForeginPassword.cs" />
+    <Compile Include="AccessControls\Passwords\ForeignUser.cs" />
+    <Compile Include="AccessControls\Passwords\PasswordDto.cs" />
+    <Compile Include="AccessControls\Passwords\UserDto.cs" />
+    <Compile Include="AccessControls\Personnels\CompanyDto.cs" />
+    <Compile Include="AccessControls\Personnels\DepartmentDto.cs" />
+    <Compile Include="AccessControls\Personnels\ForeignCompany.cs" />
+    <Compile Include="AccessControls\Personnels\ForeignDepartment.cs" />
+    <Compile Include="AccessControls\Personnels\ForeignPersonnel.cs" />
+    <Compile Include="AccessControls\Personnels\PersonnelDto.cs" />
+    <Compile Include="AccessControls\Privileges\ForeignFunctionPrivilege.cs" />
+    <Compile Include="AccessControls\Privileges\ForeignRole.cs" />
+    <Compile Include="AccessControls\Privileges\FunctionPrivilegeDto.cs" />
+    <Compile Include="AccessControls\Privileges\RoleDto.cs" />
+    <Compile Include="AccessControls\Terminals\ForeignTerminal.cs" />
+    <Compile Include="AccessControls\Terminals\ForeignWorkgroup.cs" />
+    <Compile Include="AccessControls\Terminals\TerminalDto.cs" />
+    <Compile Include="AccessControls\Terminals\WorkgroupDto.cs" />
+    <Compile Include="AlarmEvents\AlarmEventRecordDto.cs" />
+    <Compile Include="AlarmEvents\AlarmEventTypeDto.cs" />
+    <Compile Include="PackageWorkTasks\PackageSourceWorkTaskDto.cs" />
+    <Compile Include="DisplayMessages\DisplayMessageDto.cs" />
+    <Compile Include="DynamicQueryDto.cs" />
+    <Compile Include="EntityDto.cs" />
+    <Compile Include="Executors\ExecutorDto.cs" />
+    <Compile Include="Profiles\AccessControlProfile.cs" />
+    <Compile Include="Profiles\AlarmEventProfile.cs" />
+    <Compile Include="Profiles\DisplayMessageProfile.cs" />
+    <Compile Include="Profiles\ExecutorProfile.cs" />
+    <Compile Include="Profiles\SortersProfile.cs" />
+    <Compile Include="Profiles\SystemParameterProfile.cs" />
+    <Compile Include="Profiles\SystemSequenceProfile.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Sorters\Inducts\InductDto.cs" />
+    <Compile Include="Sorters\LogicalDestinations\LogicalDestinationDto.cs" />
+    <Compile Include="Sorters\Parameters\SorterParameterDto.cs" />
+    <Compile Include="Sorters\Plans\SorterPlanDto.cs" />
+    <Compile Include="Sorters\Routings\RoutingDto.cs" />
+    <Compile Include="Sorters\Scanners\ScannerDto.cs" />
+    <Compile Include="Sorters\Shutes\ShuteDto.cs" />
+    <Compile Include="Sorters\Shutes\ShuteTypeDto.cs" />
+    <Compile Include="Sorters\Sorters\LogicalSorterDto.cs" />
+    <Compile Include="Sorters\Sorters\PhysicalSorterDto.cs" />
+    <Compile Include="Sorters\WorkTasks\SorterExecuteWorkTaskDto.cs" />
+    <Compile Include="Sorters\WorkTasks\SorterMessageWorkTaskDto.cs" />
+    <Compile Include="Sorters\WorkTasks\SorterSubWorkTaskDto.cs" />
+    <Compile Include="SystemParameters\SystemParameterDto.cs" />
+    <Compile Include="SystemParameters\SystemParameterTemplateDto.cs" />
+    <Compile Include="SystemSequences\SystemSequenceDto.cs" />
+    <Compile Include="SystemTracings\OperationTracingDto.cs" />
+    <Compile Include="WorkTasks\ExecuteWorkTaskDto.cs" />
+    <Compile Include="WorkTasks\SourceWorkTaskDto.cs" />
+    <Compile Include="WorkTasks\SubWorkTaskDto.cs" />
+    <Compile Include="WorkTasks\WorkTaskDto.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\AccessControl\Kengic.Was.Domain.Entity.AccessControl.csproj">
+      <Project>{1616e368-c278-455a-8d1a-e5eb3d98a48f}</Project>
+      <Name>Kengic.Was.Domain.Entity.AccessControl</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\AlarmEvent\Kengic.Was.Domain.Entity.AlarmEvent.csproj">
+      <Project>{de17e06f-3423-4c80-9d6f-b999a61d705f}</Project>
+      <Name>Kengic.Was.Domain.Entity.AlarmEvent</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\Common\Kengic.Was.Domain.Entity.Common.csproj">
+      <Project>{2d4e3e44-bc2e-478e-99c3-d8166e4be049}</Project>
+      <Name>Kengic.Was.Domain.Entity.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\DisplayMessage\Kengic.Was.Domain.Entity.DisplayMessage.csproj">
+      <Project>{9cf4aa03-0985-4069-90a5-a48e9e11cf03}</Project>
+      <Name>Kengic.Was.Domain.Entity.DisplayMessage</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\Executor\Kengic.Was.Domain.Entity.Executor.csproj">
+      <Project>{1d85c548-cd9a-4233-a065-7922257d1a07}</Project>
+      <Name>Kengic.Was.Domain.Entity.Executor</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\Sorter\Kengic.Was.Domain.Entity.Sorter.csproj">
+      <Project>{b949e014-2a98-46b5-b336-54aafe316d9c}</Project>
+      <Name>Kengic.Was.Domain.Entity.Sorter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\SystemParameter\Kengic.Was.Domain.Entity.SystemParameter.csproj">
+      <Project>{135048f2-2876-48a6-a488-41ec86b16d1c}</Project>
+      <Name>Kengic.Was.Domain.Entity.SystemParameter</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\SystemSequence\Kengic.Was.Domain.Entity.SystemSequence.csproj">
+      <Project>{386db05a-9c65-436c-840f-a71352074e76}</Project>
+      <Name>Kengic.Was.Domain.Entity.SystemSequence</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\SystemTracing\Kengic.Was.Domain.Entity.SystemTracing.csproj">
+      <Project>{9033e9c7-64aa-4665-ab95-55d98fc9006e}</Project>
+      <Name>Kengic.Was.Domain.Entity.SystemTracing</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\..\..\4.Domains\Contracts\WorkTask\Kengic.Was.Domain.Entity.WorkTask.csproj">
+      <Project>{0C62027F-3E1D-4389-8621-D8584F509B40}</Project>
+      <Name>Kengic.Was.Domain.Entity.WorkTask</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <PropertyGroup>
+    <PostBuildEvent>
+    </PostBuildEvent>
+  </PropertyGroup>
+  <!-- To Update your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,21 @@
+﻿[
+  {
+    "Id": "AutoCreateWcsTask",
+    "Name": "AutoCreateWcsTask",
+    "Value": "0",
+    "Template": "Wcs",
+    "Description": "Create Wcs simulation task automatically"
+  },
+  {
+    "Id": "PackageMode",
+    "Name": "Package Mode",
+    "Value": "1",
+    "Template": "Sds"
+  },
+  {
+    "Id": "ComplementEnable",
+    "Name": "Complement Enable",
+    "Value": "0",
+    "Template": "Sds"
+  }
+]
